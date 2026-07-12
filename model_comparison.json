@@ -1,0 +1,66 @@
+{
+  "best_model": "Logistic Regression",
+  "results": {
+    "Logistic Regression": {
+      "best_params": {
+        "C": 0.01
+      },
+      "cv_best_recall": 0.87,
+      "test_accuracy": 0.7875,
+      "test_precision": 0.5873,
+      "test_recall": 0.8222,
+      "test_f1": 0.6852,
+      "test_roc_auc": 0.9051
+    },
+    "Decision Tree": {
+      "best_params": {
+        "max_depth": null,
+        "min_samples_split": 2
+      },
+      "cv_best_recall": 0.9263,
+      "test_accuracy": 0.725,
+      "test_precision": 0.5102,
+      "test_recall": 0.5556,
+      "test_f1": 0.5319,
+      "test_roc_auc": 0.6734
+    },
+    "Random Forest": {
+      "best_params": {
+        "max_depth": 10,
+        "max_features": "sqrt",
+        "n_estimators": 200
+      },
+      "cv_best_recall": 0.9524,
+      "test_accuracy": 0.825,
+      "test_precision": 0.6977,
+      "test_recall": 0.6667,
+      "test_f1": 0.6818,
+      "test_roc_auc": 0.8419
+    },
+    "SVM": {
+      "best_params": {
+        "C": 10,
+        "gamma": "scale",
+        "kernel": "rbf"
+      },
+      "cv_best_recall": 0.9371,
+      "test_accuracy": 0.7875,
+      "test_precision": 0.617,
+      "test_recall": 0.6444,
+      "test_f1": 0.6304,
+      "test_roc_auc": 0.8276
+    },
+    "KNN": {
+      "best_params": {
+        "n_neighbors": 9,
+        "weights": "distance"
+      },
+      "cv_best_recall": 0.9632,
+      "test_accuracy": 0.7125,
+      "test_precision": 0.4925,
+      "test_recall": 0.7333,
+      "test_f1": 0.5893,
+      "test_roc_auc": 0.7947
+    }
+  }
+}
