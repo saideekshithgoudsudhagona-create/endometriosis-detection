@@ -74,7 +74,10 @@ with st.sidebar:
             ["test_accuracy", "test_precision", "test_recall", "test_f1", "test_roc_auc"]
         ]
         df_results.columns = ["Accuracy", "Precision", "Recall", "F1", "ROC-AUC"]
-        st.dataframe(df_results.style.highlight_max(axis=0, color="#d4f7dc"))
+        styled = df_results.style.highlight_max(
+            axis=0, props="background-color:#d4f7dc; color:#0b3d24; font-weight:600;"
+        )
+        st.dataframe(styled, use_container_width=True)
         st.caption(
             f"Best model selected by **Recall** (medical context: "
             f"false negatives are costlier than false positives) → "
